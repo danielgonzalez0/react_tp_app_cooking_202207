@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'font-1';
+  src: url(./assets/fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: 'font-2';
+  src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: 'font-3';
+  src: url(./assets/fonts/Roboto-Bold.ttf);
+}
+
+$font-1: 'font-1', sans-serif;
+$font-2: 'font-2', serif;
+$font-3: 'font-3', serif;
+$default_font_size: 16pt;
+$font-size-regular: 1rem;
+
+$color-1: #ff7b77;
+$color-2: #ffd0c4;
+$color-3: rgb(0, 22, 44);
+$color-4: #fdeeee;
+$black: rgb(40, 40, 40);
+$white: rgb(253, 253, 253);
+$shadow: rgb(238, 238, 238);
+
+/*box-sizing set up*/
+
+:root {
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+
+/*common styles definition*/
+
+body {
+  font-family: $font-2;
+  color: $black;
+  background-color: $shadow;
+  font-size: $default_font_size;
+  width: 100%;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
